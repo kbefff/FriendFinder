@@ -6,8 +6,8 @@ module.exports = function (app) {
     });
 
 
-    // route for home page
-    app.use(function (req, res) {
+    // "*" is the default page
+    app.get("*", function (req, res) {
         res.sendFile(path.join(__dirname + "/../public/home.html"));
     });
 
