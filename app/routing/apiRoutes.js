@@ -1,6 +1,13 @@
+// LOAD DATA
 var friends = require("../data/friends.js");
 
+// ROUTING
+
 module.exports = function (app) {
+    //  API GET requests
+    // BELOW CODE HANDLES WHEN USERES "VISIT" A PAGE
+    //  in each of the below cases wehn a user visits a link
+    // (ex localhose:PORT/api.admin ... they are shown a JSON of the data in the table)
     app.get("/api/friends", function (req, res) {
         res.json(friends);
     });
@@ -9,10 +16,11 @@ module.exports = function (app) {
         var bestMatch = {
             name: "",
             photo: "",
-            friendsDifference: 1000
+            friendsDifference: Infinity //scores 
         };
         console.log(req.body);
 
+        // req.body captures what is in the form
         var userData = req.body;
         var userScores = userData.scores;
 
