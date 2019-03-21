@@ -189,7 +189,8 @@
                     <div class="modal-body">
                         <h2 id="match-name"></h2>
                         <img id="match-img"
-                            src="https://media.licdn.com/dms/image/C5603AQFCgMBugO3vGg/profile-displayphoto-shrink_200_200/0?e=1558569600&v=beta&t=bie_bFXzsW7oi-LAOe471tKEwHnM3YqfMxw5M2Nd8T0" alt="">
+                            src="https://media.licdn.com/dms/image/C5603AQFCgMBugO3vGg/profile-displayphoto-shrink_200_200/0?e=1558569600&v=beta&t=bie_bFXzsW7oi-LAOe471tKEwHnM3YqfMxw5M2Nd8T0"
+                            alt="">
                     </div>
                     <div class="modal-footer">
                         <button class="btn btn-default" data-dismiss="modal">Close</button>
@@ -206,6 +207,27 @@
 
 
     <script>
+        var config = {
+            ".chosen-select": {},
+            ".chosen-select-deselect": {
+                allow_single_deselect: true
+            },
+            ".chosen-select-no-single": {
+                disable_search_threshold: 10
+            },
+            ".chosen-select-no-results": {
+                no_results_text: "Oops, nothing found!"
+            },
+            ".chosen-select-width": {
+                width: "95%"
+            }
+        };
+
+        for (var selector in config) {
+            $(selector).chosen(config[selector]);
+        }
+
+
         $("#submit").on("click", function (event) {
             event.preventDefault();
             console.log("submit");
@@ -242,7 +264,6 @@
                         $("#q10").val()
                     ]
                 };
-                // var currentURL = window.location.origin;
 
                 $.post("api/friends", userData, function (data) {
                     $("#name").text(data.name);
