@@ -42,9 +42,9 @@ module.exports = function (app) {
             }
 
             if (totalDifference <= bestMatch.friendsDifference) {
-                bestMatch.name = friends[i].name;
-                bestMatch.photo = friends[i].photo;
-                bestMatch.friendsDifference = friends[i].friendsDifference;
+                bestMatch.name = currentFriend.name;
+                bestMatch.photo = currentFriend.photo;
+                bestMatch.friendsDifference = totalDifference;
             }
 
         }
