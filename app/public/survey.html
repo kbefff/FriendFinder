@@ -20,8 +20,8 @@
 </head>
 <style>
     .back-button {
-    float: right;
-}
+        float: right;
+    }
 </style>
 
 <body>
@@ -163,17 +163,41 @@
         <br>
 
         <!-- Submit Button -->
-        <a href="/api/friends"></a><button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle"
-                aria-hidden="true"></i>
+        <a href="/api/friends"></a><button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i
+                class="fa fa-check-circle" aria-hidden="true"></i>
             Submit</button>
 
         <hr>
         <footer class="footer">
             <div class="container">
-                <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub
+                <p><a href="/api/friends">API Friends List</a> | <a
+                        href="https://github.com/afhaque/friendfinder">GitHub
                         Repo</a></p>
             </div>
         </footer>
+
+        <!-- Modal -->
+        <div id="results-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">&times;</button>
+                        <h2 class="modal-title"><strong>Best Match</strong></h2>
+                    </div>
+                    <div class="modal-body">
+                        <h2 id="match-name"></h2>
+                        <img id="match-img"
+                            src="https://media.licdn.com/dms/image/C5603AQFCgMBugO3vGg/profile-displayphoto-shrink_200_200/0?e=1558569600&v=beta&t=bie_bFXzsW7oi-LAOe471tKEwHnM3YqfMxw5M2Nd8T0" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
     </div>
 
@@ -182,8 +206,10 @@
 
 
     <script>
-        $("#submit").on("click", function () {
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
             console.log("submit");
+
             function validateForm() {
                 var isValid = true;
                 $(".form-control").each(function () {
@@ -216,10 +242,12 @@
                         $("#q10").val()
                     ]
                 };
-                var currentURL = window.location.origin;
+                // var currentURL = window.location.origin;
 
-                $.post(currentURL + "api/firends", userData, function (data) {
-                    alert("working")
+                $.post("api/friends", userData, function (data) {
+                    $("#name").text(data.name);
+                    $("#photo").attr("src", data.photo);
+                    $("#results-modal").modal("toggle");
                 });
             };
 

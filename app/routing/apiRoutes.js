@@ -31,7 +31,7 @@ module.exports = function (app) {
             var currentFriend = friends[i];
             totalDifference = 0;
 
-            console.log(urrentFriend.name);
+            console.log(currentFriend.name);
 
             for (var j = 0; j < currentFriend.scores.length; j++) {
                 var currentFriendScore = currentFriend.scores[j];
@@ -41,7 +41,7 @@ module.exports = function (app) {
 
             }
 
-            if (totalDifference <= bestMathc.friendsDifference) {
+            if (totalDifference <= bestMatch.friendsDifference) {
                 bestMatch.name = friends[i].name;
                 bestMatch.photo = friends[i].photo;
                 bestMatch.friendsDifference = friends[i].friendsDifference;
