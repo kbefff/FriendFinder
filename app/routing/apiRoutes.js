@@ -38,20 +38,15 @@ module.exports = function (app) {
                 var currentUserScore = userScores[j];
 
                 totalDifference += Math.abs(parseInt(currentUserScore) - parseInt(currentFriendScore));
-
             }
-
             if (totalDifference <= bestMatch.friendsDifference) {
                 bestMatch.name = currentFriend.name;
                 bestMatch.photo = currentFriend.photo;
                 bestMatch.friendsDifference = totalDifference;
             }
-
         }
-
         friends.push(userData);
         res.json(bestMatch);
-
     });
 
 }
