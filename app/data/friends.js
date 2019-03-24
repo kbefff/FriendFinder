@@ -1,6 +1,6 @@
 var friends = [{
         name: "Archie",
-        photo: "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwj2roG83pPhAhUGrZ4KHWjxDUoQjRx6BAgBEAU&url=https%3A%2F%2Fwww.amazon.com%2FArchie-Vol-5-Mark-Waid%2Fdp%2F1682559297&psig=AOvVaw09EtgEpdfMHR7U7uJdAcRA&ust=1553275008718387",
+        photo: "https://cdn.theatlantic.com/assets/media/img/mt/2017/10/Pict1_Ursinia_calendulifolia/lead_720_405.jpg?mod=1533691909",
         scores: [
             "5",
             "1",
@@ -17,7 +17,7 @@ var friends = [{
     },
     {
         name: "Betty",
-        photo: "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwj2roG83pPhAhUGrZ4KHWjxDUoQjRx6BAgBEAU&url=https%3A%2F%2Fwww.amazon.com%2FArchie-Vol-5-Mark-Waid%2Fdp%2F1682559297&psig=AOvVaw09EtgEpdfMHR7U7uJdAcRA&ust=1553275008718387",
+        photo: "https://cdn.theatlantic.com/assets/media/img/mt/2017/10/Pict1_Ursinia_calendulifolia/lead_720_405.jpg?mod=1533691909",
         scores: [
             "5",
             "3",
@@ -34,7 +34,7 @@ var friends = [{
     },
     {
         name: "Veronica",
-        photo: "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwj2roG83pPhAhUGrZ4KHWjxDUoQjRx6BAgBEAU&url=https%3A%2F%2Fwww.amazon.com%2FArchie-Vol-5-Mark-Waid%2Fdp%2F1682559297&psig=AOvVaw09EtgEpdfMHR7U7uJdAcRA&ust=1553275008718387",
+        photo: "https://cdn.theatlantic.com/assets/media/img/mt/2017/10/Pict1_Ursinia_calendulifolia/lead_720_405.jpg?mod=1533691909",
         scores: [
             "5",
             "1",
@@ -51,7 +51,7 @@ var friends = [{
     },
     {
         name: "Reggie",
-        photo: "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwj2roG83pPhAhUGrZ4KHWjxDUoQjRx6BAgBEAU&url=https%3A%2F%2Fwww.amazon.com%2FArchie-Vol-5-Mark-Waid%2Fdp%2F1682559297&psig=AOvVaw09EtgEpdfMHR7U7uJdAcRA&ust=1553275008718387",
+        photo: "https://cdn.theatlantic.com/assets/media/img/mt/2017/10/Pict1_Ursinia_calendulifolia/lead_720_405.jpg?mod=1533691909",
         scores: [
             "3",
             "1",
