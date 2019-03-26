@@ -17,6 +17,3 @@ app.listen(PORT, function(){
     console.log("app listenint on PORT: " + PORT);
 });
 
-app.get("/", function(req, res) {
-    res.json(path.join(__dirname, "public/index.html"));
-  });
