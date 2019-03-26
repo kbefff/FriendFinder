@@ -1,6 +1,6 @@
-var friends = [{
+var friendArray = [{
         name: "Archie",
-        photo: "https://cdn.theatlantic.com/assets/media/img/mt/2017/10/Pict1_Ursinia_calendulifolia/lead_720_405.jpg?mod=1533691909",
+        photo: "/Users/coding/Desktop/UW/Homeworks/13_Express/FriendFinder/app/assets/images/archie.jpg",
         scores: [
             "5",
             "1",
@@ -17,24 +17,24 @@ var friends = [{
     },
     {
         name: "Betty",
-        photo: "https://cdn.theatlantic.com/assets/media/img/mt/2017/10/Pict1_Ursinia_calendulifolia/lead_720_405.jpg?mod=1533691909",
+        photo: "/Users/coding/Desktop/UW/Homeworks/13_Express/FriendFinder/app/assets/images/archie.jpg",
         scores: [
-            "5",
-            "3",
-            "4",
-            "4",
-            "5",
+            "1",
             "1",
             "2",
-            "5",
+            "1",
+            "3",
+            "1",
+            "1",
             "4",
+            "1",
             "1"
 
         ]
     },
     {
         name: "Veronica",
-        photo: "https://cdn.theatlantic.com/assets/media/img/mt/2017/10/Pict1_Ursinia_calendulifolia/lead_720_405.jpg?mod=1533691909",
+        photo: "/Users/coding/Desktop/UW/Homeworks/13_Express/FriendFinder/app/assets/images/archie.jpg",
         scores: [
             "5",
             "1",
@@ -51,7 +51,7 @@ var friends = [{
     },
     {
         name: "Reggie",
-        photo: "https://cdn.theatlantic.com/assets/media/img/mt/2017/10/Pict1_Ursinia_calendulifolia/lead_720_405.jpg?mod=1533691909",
+        photo: "/Users/coding/Desktop/UW/Homeworks/13_Express/FriendFinder/app/assets/images/archie.jpg",
         scores: [
             "3",
             "1",
@@ -68,4 +68,4 @@ var friends = [{
     }
 ];
 
-module.exports = friends;
+module.exports = friendArray;

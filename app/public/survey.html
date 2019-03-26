@@ -188,7 +188,7 @@
                     </div>
                     <div class="modal-body">
                         <h2 id="match-name"></h2>
-                        <img id="match-img" src="" alt="match photo" width="100%" max-width="250px">
+                        <img id="match-img" src="" alt="match photo" width="100%" max-width="300px">
                     </div>
                     <div class="modal-footer">
                         <button class="btn btn-default" data-dismiss="modal">Close</button>
@@ -266,7 +266,7 @@
                 var currentURL = window.location.origin;
 
 
-                $.post(currentURL + "api/friends", userData).then(function(data) {
+                $.post(currentURL + "/api/friends", userData).then(function(data) {
                     $('#name').val("");
 					$('#photo').val("");
 					$('#q1').val("");
@@ -280,9 +280,9 @@
 					$('#q9').val("");
 					$('#q10').val("");
 
-
-                    $("#name").text(data.name);
-                    $("#photo").attr("src", data.photo);
+                    console.log(`Your top match is ${data.name}`);
+                    $("#match-name").text(data.name);
+                    $("#match-img").attr("src", data.photo);
                     $("#results-modal").modal("toggle");
                 });
             // };
