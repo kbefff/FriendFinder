@@ -1,6 +1,6 @@
 var friendArray = [{
         name: "Archie",
-        photo: "/Users/coding/Desktop/UW/Homeworks/13_Express/FriendFinder/app/assets/images/archie.jpg",
+        photo: "../assets/images/archie.jpg",
         scores: [
             "5",
             "1",
@@ -17,7 +17,7 @@ var friendArray = [{
     },
     {
         name: "Betty",
-        photo: "/Users/coding/Desktop/UW/Homeworks/13_Express/FriendFinder/app/assets/images/archie.jpg",
+        photo: "../assets/images/archie.jpg",
         scores: [
             "1",
             "1",
@@ -34,7 +34,7 @@ var friendArray = [{
     },
     {
         name: "Veronica",
-        photo: "/Users/coding/Desktop/UW/Homeworks/13_Express/FriendFinder/app/assets/images/archie.jpg",
+        photo: "../assets/images/archie.jpg",
         scores: [
             "5",
             "1",
@@ -51,7 +51,7 @@ var friendArray = [{
     },
     {
         name: "Reggie",
-        photo: "/Users/coding/Desktop/UW/Homeworks/13_Express/FriendFinder/app/assets/images/archie.jpg",
+        photo: "../assets/images/archie.jpg",
         scores: [
             "3",
             "1",
